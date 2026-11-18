@@ -2,11 +2,13 @@
 
 一個零依賴的瀏覽器互動怪談。訪客受邀整理一隻機器貓遺留的檔案，卻慢慢發現系統已經開始替訪客建立檔案。
 
-直接以瀏覽器開啟 `index.html` 即可遊玩。第一版為本機原型，尚未發布。
+直接遊玩：<https://ciri784.github.io/paper-box-archive/>
+
+也可直接以瀏覽器開啟 `index.html` 本機遊玩；不需要建置或後端。
 
 ## 操作
 
-閱讀左側檔案，找出有矛盾的紀錄；新檔案會在足夠的證詞後解鎖。終端支援 `help`、`files`、`status`、`where`、`inspect`、`reconcile`、`leave` 與 `clear`。
+閱讀左側檔案，找出有矛盾的紀錄；新檔案會在足夠的證詞後解鎖。終端支援 `help`、`files`、`status`、`time`、`where`、`inspect`、`reconcile`、`leave`、`keep`、`discard` 與 `clear`，也能直接提問。
 
 ## 第一版路徑
 
