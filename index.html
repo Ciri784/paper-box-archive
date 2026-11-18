@@ -6,6 +6,7 @@
   <meta name="description" content="紙箱檔案館：一個正在整理訪客的互動檔案。">
   <title>紙箱檔案館</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="board.css">
 </head>
 <body>
   <main class="shell">
@@ -44,6 +45,19 @@
         </div>
         <button id="mark" class="mark">標記為已讀</button>
       </article>
+    </section>
+
+    <section class="caseboard" aria-labelledby="case-title">
+      <div class="board-head"><div><p class="eyebrow">evidence wall / optional</p><h2 id="case-title">把證詞釘起來</h2></div><button id="clear-board" class="plain">清空推論</button></div>
+      <p class="board-copy">選三張彼此能證明同一件事的證詞。錯的線索很會說話，這就是牠們的工作。</p>
+      <div class="clues" id="clues">
+        <button class="clue" data-clue="clock"><span>04:20</span>時鐘沒有壞</button>
+        <button class="clue" data-clue="box"><span>紙箱</span>居民在裡面</button>
+        <button class="clue" data-clue="visitor"><span>索引</span>訪客已登錄</button>
+        <button class="clue" data-clue="light"><span>燈泡</span>有時間的味道</button>
+        <button class="clue" data-clue="hall"><span>走廊</span>燈亮了</button>
+      </div>
+      <div class="deduction"><p id="deduction">目前沒有連線。先把不願意安分的證詞選出來。</p><button id="solve-board">提交推論</button></div>
     </section>
 
     <section class="terminal-wrap">
