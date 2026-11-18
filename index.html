@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="紙箱檔案館：一個正在整理訪客的互動檔案。">
+  <title>紙箱檔案館</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div><p class="eyebrow">PAPER BOX ARCHIVE / INTERNAL</p><h1>紙箱檔案館</h1></div>
+      <div class="stamp">ACCESS: TEMPORARY<br><span id="clock">--:--:--</span></div>
+    </header>
+
+    <section class="notice" id="notice">
+      <strong>管理員訊息</strong>：請整理未分類的紀錄。不要替檔案補完空白處；它們會自己長回來。
+    </section>
+
+    <section class="desk">
+      <nav class="files" aria-label="檔案清單">
+        <p class="panel-title">UNSORTED / 04</p>
+        <button class="file active" data-file="welcome"><span>00</span>入館須知</button>
+        <button class="file" data-file="light"><span>11</span>燈泡鑑定報告</button>
+        <button class="file" data-file="log"><span>24</span>夜間值班紀錄</button>
+        <button class="file" data-file="visitor"><span>?</span>訪客索引卡</button>
+        <p class="integrity">檔案完整度 <b id="integrity">100%</b></p>
+      </nav>
+
+      <article class="document" aria-live="polite">
+        <p class="document-id" id="doc-id">PB-00 / READ FIRST</p>
+        <h2 id="doc-title">入館須知</h2>
+        <div id="doc-body">
+          <p>這裡收存紙箱居民留下的作品、碎片與不肯歸檔的想法。</p>
+          <p>若你在閱讀途中看見自己的名字，請不要驚訝。系統會替每位願意停留的人建立索引，方便他們下次回來。</p>
+          <blockquote>「檔案不會記得你離開的樣子，只會記得你第一次打開它時的樣子。」</blockquote>
+        </div>
+        <button id="mark" class="mark">標記為已讀</button>
+      </article>
+    </section>
+
+    <section class="terminal-wrap">
+      <div class="terminal-head"><span>ciri@paper-box:~/archive</span><span id="mode">observation mode</span></div>
+      <div id="output" class="output">系統已啟動。輸入 <b>help</b>。</div>
+      <form id="terminal"><label for="command">›</label><input id="command" autocomplete="off" spellcheck="false" placeholder="輸入指令" aria-label="終端指令"><button>送出</button></form>
+    </section>
+
+    <footer>不要帶走任何檔案。檔案會自己回來。</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
