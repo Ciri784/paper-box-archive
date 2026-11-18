@@ -20,12 +20,16 @@
 
     <section class="desk">
       <nav class="files" aria-label="檔案清單">
-        <p class="panel-title">UNSORTED / 04</p>
+        <p class="panel-title" id="file-count">UNSORTED / 04</p>
         <button class="file active" data-file="welcome"><span>00</span>入館須知</button>
         <button class="file" data-file="light"><span>11</span>燈泡鑑定報告</button>
         <button class="file" data-file="log"><span>24</span>夜間值班紀錄</button>
         <button class="file" data-file="visitor"><span>?</span>訪客索引卡</button>
+        <button class="file locked" data-file="maintenance" disabled><span>31</span>維護申請單</button>
+        <button class="file locked" data-file="witness" disabled><span>42</span>不在場證明</button>
+        <button class="file locked" data-file="return" disabled><span>00</span>歸還紀錄</button>
         <p class="integrity">檔案完整度 <b id="integrity">100%</b></p>
+        <p class="progress">已整理 <b id="progress">0 / 7</b></p>
       </nav>
 
       <article class="document" aria-live="polite">
@@ -42,7 +46,7 @@
 
     <section class="terminal-wrap">
       <div class="terminal-head"><span>ciri@paper-box:~/archive</span><span id="mode">observation mode</span></div>
-      <div id="output" class="output">系統已啟動。輸入 <b>help</b>。</div>
+      <div id="output" class="output">系統已啟動。輸入 <b>help</b>。<br>提示：有些檔案必須被前面的紀錄叫醒。</div>
       <form id="terminal"><label for="command">›</label><input id="command" autocomplete="off" spellcheck="false" placeholder="輸入指令" aria-label="終端指令"><button>送出</button></form>
     </section>
 
